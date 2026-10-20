@@ -121,7 +121,7 @@ bool HostsDatabase::setPort(uint64_t dpid,
                             uint32_t in_port)
 {
     if (is_broadcast(mac)) {
-        LOG(WARNING) << "Broadcast source address, dropping";
+        LOG_WARN("Broadcast source address, dropping");
         return false;
     }
 
